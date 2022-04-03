@@ -25,6 +25,7 @@ Comment.init(
         key: "id",
       },
     },
+    // THis clause broke everything, needs to be reworked
     post_id: {
       type: DataTypes.INTEGER,
       references: {
