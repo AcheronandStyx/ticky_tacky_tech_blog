@@ -2,16 +2,16 @@
   <div class="title">
     {{title}}
     Posted by
-    {{user.username}}
+    {{post.user.username}}
     on
-    {{format_date created_at}}
+    {{format_date post.created_at}}
   </div>
-  <div class="post-body">
+  <div class="meta">
     <!-- add click even listener on entire post-->
     {{post_text}}
   </div>
   <div class="meta">
-    <a href="/post/{{post.id}}">{{post.comments.length}} comment(s)</a>
+    {{post.comments.length}} comment(s)
   </div>
 </article>
 

@@ -1,13 +1,11 @@
-<article class="post" href="/post/{{id}}">
+<article class="post">
   <div class="title">
-    {{title}}
-    Posted by
-    {{user.username}}
-    on
+
+    <a href="/post/{{id}}">{{title}}</a>
+    Posted on
     {{format_date created_at}}
   </div>
-  <div class="post-body">
-    <!-- add click even listener on entire post-->
+  <!-- <div class="post-body">
     {{post_text}}
-  </div>
+  </div>-->
 </article>

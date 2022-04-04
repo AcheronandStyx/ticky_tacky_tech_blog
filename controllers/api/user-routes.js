@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { User, Post, Comment } = require("../../models");
-// const withAuth = require("../../utils/auth");
+const withAuth = require("../../utils/auth");
 
 router.get("/", (req, res) => {
   User.findAll({
@@ -69,7 +69,7 @@ router.post("/", (req, res) => {
     });
 });
 
-router.put("/:id", (req, res) => {
+router.put("/:id", withAuth, (req, res) => {
   User.update(req.body, {
     // use req.body to only update the parts that are passed in
     individualHooks: true,
@@ -92,7 +92,7 @@ router.put("/:id", (req, res) => {
 
 // delete user
 // http://localhost:3001/api/users/1
-router.delete("/:id", (req, res) => {
+router.delete("/:id", withAuth, (req, res) => {
   User.destroy({
     where: {
       id: req.params.id,
