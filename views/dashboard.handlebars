@@ -21,8 +21,7 @@
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
-      <button type="submit" class="btn .delete-post-btn">Delete Post</button>
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Manage Post</a>
     </li>
     {{/each}}
   </ol>
