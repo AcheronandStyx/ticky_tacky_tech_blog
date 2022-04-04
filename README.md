@@ -16,6 +16,8 @@ _ A use cane click the title of the post to navigate to its page where they can 
 
 You can find the repositoiry here -> [Ticky Tacky Tech Blog](https://github.com/AcheronandStyx/ticky_tacky_tech_blog).
 
+You can find the application deployed via heroku here -> [Live Application](https://safe-fjord-23917.herokuapp.com/)
+
 ## License
 
 MIT License
